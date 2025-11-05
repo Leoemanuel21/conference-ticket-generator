@@ -17,31 +17,37 @@
             <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
             <h2>Secure your spot at next year's biggest coding conference.</h2>
         </section>
-
         <section id="forms">
-            <div class="box">
-                <h1>Upload Avatar</h1>
-                
+            <label for="upload">Upload Avatar</label>
+            <div class="box-file">
+                <input type="file" name="upload" id="upload" placeholder="">
+                <div class="icon-upload"><img src="images/icon-upload.svg" alt="icon-upload"></div>
+                <p>Drag and drop or click to upload</p>
+            </div>
+
+            <div class="info-upload">
+                <img src="images/icon-info.svg" alt="icon-info">
+                <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
             </div>
             
             <div class="box">
-                <h1>Full Name</h1>
+                <label for="name">Full Name</label>
                 <input type="text" id="name">
             </div>
 
             <div class="box">
-                <h1>Email Address</h1>
+                <label for="email">Email Address</label>
                 <input type="text" id="email" placeholder="example@email.com">
             </div>
 
             <div class="box">
-                <h1>GitHub Username</h1>
+                <label for="username">GitHub Username</label>
                 <input type="text" id="username" placeholder="@yourusername">
             </div>
 
-            <button>Generate My Ticket</button>
+            <button type="submit">Generate My Ticket</button>
         </section>
-     <!--   Upload Avatar Drag and drop or click to upload Upload your photo (JPG or PNG, max size: 500KB). Full Name Email Address example@email.com GitHub Username @yourusername Generate My Ticket Congrats, ! Your ticket is ready. We've emailed your ticket to and will send updates in the run up to the event. Coding Conf Jan 31, 2025 / Austin, TX -->   
+     <!--  Congrats, ! Your ticket is ready. We've emailed your ticket to and will send updates in the run up to the event. Coding Conf Jan 31, 2025 / Austin, TX -->   
 
     </main>
 

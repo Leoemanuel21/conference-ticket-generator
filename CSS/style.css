@@ -110,9 +110,56 @@ main{
     margin-bottom: 3rem;
 }
 
-#forms .box h1{
-    margin-bottom: 1rem;
+#forms .box label{
     font-weight: 500;
+}
+
+#forms .box-file{
+    height: 13rem;
+    background-color: #19153A;
+    position: relative;
+    border: .2rem dashed var(--Neutral-700);
+    border-radius: 1rem;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#forms .box-file #upload{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    inset: 0;
+}
+
+#forms .box-file .icon-upload{
+    height: 5rem;
+    width: 5rem;
+    background-color: #342E54;
+    border: .1rem solid var(--Neutral-500);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#forms .box-file p{
+    color: var(--Neutral-300);
+    font-size: 1.6rem;
+}
+
+#forms .info-upload{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#forms .info-upload p{
+    color: var(--Neutral-300);
+    font-size: 1rem;
 }
 
 #forms .box #name, #email, #username{
@@ -124,6 +171,7 @@ main{
     border-radius: 1rem;
     outline: none;
     padding-left: 2rem;
+    margin-top: 1rem;
 }
 
 ::placeholder{
