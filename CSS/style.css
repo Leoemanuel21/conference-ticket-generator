@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root{
+    --Neutral-0: hsl(0, 0%, 100%);
+    --Neutral-300: hsl(252, 6%, 83%);
+    --Neutral-500: hsl(245, 15%, 58%);
+    --Neutral-700: hsl(245, 19%, 35%);
+    --Neutral-900: hsl(248, 70%, 10%);
+
+    --Orange-500: hsl(7, 88%, 67%);
+    --Orange-700: hsl(7, 71%, 60%);
+
+    --Gradient-text1: hsl(7, 86%, 67%);
+    --Gradient-text2: hsl(0, 0%, 100%);
+
+    --font-destaque: 'Inconsolata', sans-serif;
+
+    --Weights: 400, 500, 700, 800;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: var(--font-destaque);
+    color: aliceblue;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    background-image: 
+    url(../images/pattern-squiggly-line-top.svg),
+    url(../images/pattern-lines.svg),
+    url(../images/pattern-circle.svg),
+    url(../images/pattern-squiggly-line-bottom-mobile-tablet.svg),
+    url(../images/background-mobile.png);
+
+    background-repeat: 
+    no-repeat, 
+    no-repeat, 
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+    background-size:  
+    10rem, 
+    90rem,
+    11rem,
+    30rem,
+    cover;
+    
+    background-position: 
+    right 2rem, 
+    center top,
+    30rem 40rem,
+    left bottom,
+    center;
+}
+
+header{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 80%;
+}
+
+main{
+    width: 31rem;
+    margin: 4rem 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#info{
+    text-align: center;
+}
+
+#info h1{
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+}
+
+#info h2{
+    color: var(--Neutral-500);
+    font-weight: 500;
+}
+
+#forms{
+    color: var(--Neutral-0);
+    margin-top: 5rem;
+}
+
+#forms .box{
+    margin-bottom: 3rem;
+}
+
+#forms .box h1{
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+#forms .box #name, #email, #username{
+    height: 5rem;
+    width: 100%;
+    background-color: #19153A;
+    color: var(--Neutral-0);
+    border: .2rem solid var(--Neutral-700);
+    border-radius: 1rem;
+    outline: none;
+    padding-left: 2rem;
+}
+
+::placeholder{
+    color: var(--Neutral-300);
+}
+
+#forms button{
+    height: 5rem;
+    width: 100%;
+    background-color: var(--Gradient-text1);
+    color: var(--Neutral-900);
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+}
+
+
+footer{
+    text-align: center;
+    color: var(--White);
+    font-weight: 300;
+}
